@@ -8,7 +8,7 @@ screen= tl.Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.title("Snake Python Game")
-screen.tracer(0)  #to turn off display on the screen
+screen.tracer(0)  #turn off display on the screen
 screen.listen()
 
 # def fwd():
@@ -34,7 +34,7 @@ while game_is_on:
     snake_dist=snakes.snake_head.distance(foods) #getting the snake and food distance
 
     # Detecting wall collision
-    if xcor > 280 or xcor < -270 or ycor > 270 or ycor < -280:
+    if xcor > 280 or xcor < -280 or ycor > 270 or ycor < -280:
         game_is_on =False
         scoreboard.game_over()
 
